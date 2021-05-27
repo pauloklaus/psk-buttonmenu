@@ -11,7 +11,8 @@
     "keywords": [
         "button",
         "menu",
-        "vue"
+        "vue",
+        "vuejs"
     ],
     "license": "GPLv3",
     "private": false,
