@@ -2,32 +2,36 @@
 
 Vue component to display a button menu and return the button the user clicked.
 
-* Report bugs: https://github.com/pauloklaus/psk-buttonmenu/issues
-* Live test: https://pauloklaus.com.br/playground
+* Report bugs: <https://github.com/pauloklaus/psk-buttonmenu/issues>
+* Live test: <https://pauloklaus.com.br/playground>
 
 ## Install
 
 Create a new vue project:
-```
+
+```shell
 vue create
 ```
 
 Install component and dependencies:
-```
-npm install --save axios bootstrap bootstrap-vue psk-buttonmenu
+
+```shell
+npm install --save bootstrap bootstrap-vue psk-buttonmenu
 ```
 
 ## Environment setting
 
 Make a src/resources folder at the root:
-```
+
+```shell
 mkdir src/resources
 ```
 
 ### Configure the bootstrap
 
 Create the src/resources/bootstrap-vue.js:
-```
+
+```shell
 import Vue from "vue";
 import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
 
@@ -41,7 +45,8 @@ Vue.use(BootstrapVueIcons);
 ### Configure the psk-buttonmenu
 
 Create the src/resources/psk-buttonmenu.js:
-```
+
+```javascript
 import Vue from "vue";
 import ButtonMenu from "psk-buttonmenu";
 
@@ -51,7 +56,8 @@ Vue.use(ButtonMenu, { ButtonMenuName: "MyButtonMenu" });
 ### Import psk-buttonmenu and dependencies
 
 The "src/main.js" file should look like this:
-```
+
+```javascript
 import Vue from "vue";
 import App from "./App.vue";
 
@@ -67,7 +73,8 @@ new Vue({
 ```
 
 ## How to use (example in App.vue)
-```
+
+```vue
 <template>
     <div>
         <my-button-menu @click="active = true" />
@@ -118,13 +125,14 @@ buttons | Text to display | yes | (1)
 size | Size of buttons (bootstrap template: sm, lg) | no | null
 
 (1)
-```
+
+```vue
 { description: "Yes", variant: "primary", icon: "check2" },
 { description: "No", variant: "primary", icon: "x" },
 { description: "Cancel", variant: "secondary", icon: "x" }
 ```
 
-* Icons from https://bootstrap-vue.org/docs/icons
+* Icons from <https://bootstrap-vue.org/docs/icons>
 
 ## Events
 
@@ -137,7 +145,8 @@ Add properties to the button object so that you can identify it.
 ## Using in the browser
 
 To use directly in the browser, import psk-buttonmenu:
-```
+
+```html
 <script src="https://unpkg.com/vue-boostrap" />
 <script src="https://unpkg.com/psk-buttonmenu" />
 ```

@@ -1,6 +1,6 @@
 {
     "name": "psk-buttonmenu",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Vue component to display a button menu and return the button the user clicked.",
     "author": {
         "name": "Paulo Sergio Klaus",
