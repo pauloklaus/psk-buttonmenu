@@ -31,7 +31,7 @@ mkdir src/resources
 
 Create the src/resources/bootstrap-vue.js:
 
-```shell
+```javascript
 import Vue from "vue";
 import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
 
@@ -126,7 +126,7 @@ size | Size of buttons (bootstrap template: sm, lg) | no | null
 
 (1)
 
-```vue
+```javascript
 { description: "Yes", variant: "primary", icon: "check2" },
 { description: "No", variant: "primary", icon: "x" },
 { description: "Cancel", variant: "secondary", icon: "x" }
