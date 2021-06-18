@@ -18,6 +18,10 @@ export default {
         size: {
             type: String,
             default: ""
+        },
+        autofocus: {
+            type: Boolean,
+            default: false
         }
     },
     data() {
@@ -25,11 +29,12 @@ export default {
             buttonsList: []
         }
     },
-    mounted() {
-        this.$refs.buttons[0].focus();
-    },
     created() {
         this.fillButtonsList();
+
+        this.$nextTick(() => {
+            this.$refs.buttons[0].focus();
+        });
     },
     methods: {
         fillButtonsList() {

@@ -123,6 +123,7 @@ Property | Description | Required | Default
 -|-|-|-
 buttons | Text to display | yes | (1)
 size | Size of buttons (bootstrap template: sm, lg) | no | null
+autofocus | Focus on the first button | no | false
 
 (1)
 
