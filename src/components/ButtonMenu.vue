@@ -32,9 +32,10 @@ export default {
     created() {
         this.fillButtonsList();
 
-        this.$nextTick(() => {
-            this.$refs.buttons[0].focus();
-        });
+        if (this.autofocus)
+            this.$nextTick(() => {
+                this.$refs.buttons[0].focus();
+            });
     },
     methods: {
         fillButtonsList() {
